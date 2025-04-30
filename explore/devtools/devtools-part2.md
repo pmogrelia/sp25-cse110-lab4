@@ -1,0 +1,2 @@
+1. The bug was that the input we get from the webpager is a string, however + in javascript on two strings simply concatenates them. Thus 1 + 2 = 12 which is mathematically incorrect. 
+2. To fix this we need to typecast our input to a number, we can do this by using the Number() function for both of our inputs before calling calculateSum. Screenshot of fix.png can be found in expand/screenshots.
